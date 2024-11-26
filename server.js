@@ -6,7 +6,7 @@ import { Server } from 'socket.io';
 const app = express();
 const server = createServer(app);
 const io = new Server(server);
-
+const PORT = process.env.PORT || 5000
 app.use(express.static(path.resolve("./public")));
 
 io.on("connection", (socket) => {
@@ -42,6 +42,6 @@ io.on("connection", (socket) => {
     });
 });
 
-server.listen(5000, () => {
-    console.log("Server is running on http://localhost:5000");
+server.listen(PORT, () => {
+    console.log(`Server is running on http://localhost:${PORT}`);
 });
