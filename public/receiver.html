@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>File Receiver</title>
+    <link rel="stylesheet" href="receiver.css">
+</head>
+
+<body>
+    <div class="app">
+        <div class="live sharing">
+            <div class="form">
+                <h2>Welcome! Join a Room to Receive Files</h2>
+                <div class="form-input">
+                    <label for="join-id">Join ID</label>
+                    <input type="text" id="join-id" placeholder="Enter Room ID" />
+                </div>
+                <div class="form-input">
+                    <button id="receiver-start-btn">Let's Connect</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="socket.io/socket.io.js"></script>
+    <script src="receiver.js"></script>
+</body>
+
+</html>

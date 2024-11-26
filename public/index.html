@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="app">
+        <div class=" live sharing active">
+            <div class="form">
+                <h2>Hello people!! Use this to share your files securely</h2>
+                <div class="form-input">
+                    <button id="sender-start-btn">Create room</button>
+                </div>
+                <div class="form-input" id="join-id">
+            
+                     </div>
+            </div>
+        </div>
+        <div class="screen fileShare-screen">
+            <div class="file-input">
+                <label for="file-input">
+                    Select files for sharing
+                </label>
+                <input type="file" id="file-input">
+            </div>
+            <div class="list-files">
+                <div class="title">Shared files</div>
+                <div class="item">
+                    <div class="progress">0%</div>
+                    <div class="filename">Abc.txt</div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <script src="socket.io/socket.io.js"></script>
+    <script src="index.js"></script>
+</body>
+
+</html>

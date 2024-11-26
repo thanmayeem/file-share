@@ -1,0 +1,185 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Styling */
+body {
+    font-family: 'Comic Sans MS', 'Arial', sans-serif; /* Fun and friendly font */
+    background: linear-gradient(135deg, #FFDEE9, #B5FFFC); /* Soft pastel gradient */
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    padding: 20px;
+}
+
+/* Main Container */
+.app {
+    width: 90%;
+    max-width: 600px;
+    background: #ffffff; /* Clean white card */
+    border-radius: 20px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1); /* Soft shadow */
+    padding: 20px;
+    overflow: hidden;
+}
+
+/* Title Styling */
+h2 {
+    text-align: center;
+    color: #FF69B4; /* Cute pink color */
+    margin-bottom: 20px;
+    font-size: 1.5rem;
+}
+
+/* Form Container */
+.form {
+    text-align: center;
+}
+
+.form-input {
+    margin-bottom: 20px;
+}
+
+.form-input input {
+    padding: 10px;
+    border-radius: 10px;
+    border: 2px solid #FF69B4;
+    width: 80%;
+    font-size: 1rem;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.form-input input:focus {
+    outline: none;
+    border-color: #FF1493; /* Darker pink */
+    background-color: #FFF0F5; /* Light pink */
+}
+
+button {
+    background-color: #FFD700; /* Golden button */
+    color: #fff;
+    padding: 10px 15px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+    font-weight: bold;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+button:hover {
+    background-color: #FFA500; /* Orange on hover */
+}
+
+/* Room ID Section */
+#join-id {
+    background-color: #F0F8FF; /* Light blue for room ID */
+    padding: 10px;
+    border-radius: 10px;
+    font-size: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 20px;
+}
+
+/* Room ID Text */
+#join-id b {
+    font-size: 1.2rem;
+    color: #FF69B4;
+}
+
+#join-id span {
+    margin-top: 5px;
+    font-size: 1rem;
+    background-color: #ffffff;
+    border: 2px dashed #FF69B4;
+    border-radius: 5px;
+    padding: 5px 10px;
+    color: #FF69B4;
+}
+
+/* File Input */
+.file-input {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.file-input label {
+    display: inline-block;
+    background-color: #FF69B4;
+    color: #fff;
+    padding: 10px 15px;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background 0.3s ease;
+}
+
+.file-input label:hover {
+    background-color: #FF1493; /* Darker pink */
+}
+
+.file-input input {
+    display: none;
+}
+
+/* List of Files */
+.list-files {
+    background-color: #FFFACD; /* Soft yellow for file list */
+    border-radius: 15px;
+    padding: 10px;
+    margin-top: 20px;
+}
+
+.list-files .title {
+    font-weight: bold;
+    color: #FF69B4;
+    margin-bottom: 10px;
+}
+
+.list-files .item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 10px;
+    background: #ffffff;
+    border: 1px solid #FF69B4;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+.list-files .item .progress {
+    color: #FF69B4;
+    font-weight: bold;
+}
+
+.list-files .item .filename {
+    font-style: italic;
+    color: #555;
+}
+
+/* Add Animation */
+button, label {
+    animation: bounce 2s infinite;
+}
+
+@keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {
+        transform: translateY(0);
+    }
+    40% {
+        transform: translateY(-10px);
+    }
+    60% {
+        transform: translateY(-5px);
+    }
+}
